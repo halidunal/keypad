@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keypad | Halid Ünal</title>
+    <link rel="stylesheet" href="keypad.css"/>
+</head>
+<body>
+
+    <div class="main">
+        <form name="form" action="https://httpbin.org/post" method="POST">
+            <label for="text"></label>
+            <input class="text" name="password" id="input" type="password" readonly>        
+        <table>
+            <tr>
+                <td><input class="button" type="button" id="7" value="7" onclick="insert(value)"></td>
+                <td><input class="button" type="button" id="8" value="8" onclick="insert(value)"></td>
+                <td><input class="button" type="button" id="9" value="9" onclick="insert(value)"></td>
+                <td><input class="button" type="button" title="Show/Hide" value="👁" onclick="showHide()"></td>
+
+            </tr>
+            <tr>
+                <td><input class="button" type="button" id="4" value="4" onclick="insert(value)"></td>
+                <td><input class="button" type="button" id="5" value="5" onclick="insert(value)"></td>
+                <td><input class="button" type="button" id="6" value="6" onclick="insert(value)"></td>
+                <td><input class="button" type="button" title="Mix" value="⟲" onclick="mix()"></td>
+
+            </tr>
+            <tr>
+                <td><input class="button" type="button" id="1" value="1" onclick="insert(value)"> </td>
+                <td><input class="button" type="button" id="2" value="2" onclick="insert(value)"> </td>
+                <td><input class="button" type="button" id="3" value="3" onclick="insert(value)"></td>
+                <td><input class="button" type="reset" title="Clear All" value="🗑"></td>
+
+            </tr>
+            <tr>
+                <td><input class="button" type="reset" value="C"></td>
+                <td><input class="button" type="button" id="0" value="0" onclick="insert(value)"></td>
+                <td><input class="button" type="button" title="Delete" value="←" onclick="del()"></td>
+                <td><input class="button" type="submit" title="Send" value="✔"></td>
+
+            </tr>
+        </table >
+        </form>
+    </div>
+
+    <script src="keypad.js"></script>
+
+</body>
+</html>

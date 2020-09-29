@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main{
+    padding: 10px;
+    width: 225px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    border: solid gray 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px -1px rgb(0,0,0);          
+}
+
+.button{
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    font: 1.5em monospace;
+    cursor: pointer;
+    background: rgba(0,0,0,50%);
+    color: #fff;
+    border: none;
+    border-radius: 10%;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.button:hover{
+    background-color: black;
+    font-size: 2em;
+}
+
+.button:focus{
+    outline: none;
+}
+
+.text{  
+    margin: 5px;
+    padding: 10px;
+    height: 50px;
+    width: 96%;
+    font-family: monospace;
+    font-size: 2em;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: gray;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
