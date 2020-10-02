@@ -12,7 +12,7 @@ function mix(){
         x.value = y.value;
         y.value = temp;
     }
-}password
+}
 
 function del() {
     var exp = document.form.password.value;
